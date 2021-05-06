@@ -14,7 +14,7 @@ export const navItems: any[] = [
     },
     {
         name: 'Antrian',
-        url: '/queue',
+        url: '/queue/cetak/no/urut',
         icon: 'fa fa-ticket',
         permission: null
     },
