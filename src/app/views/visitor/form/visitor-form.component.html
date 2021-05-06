@@ -1,0 +1,115 @@
+<!-- Form -->
+<div class="row animated fadeIn" *ngIf="!showList">
+
+  <div class="col-sm-12 p-3">
+      <form #f="ngForm" novalidate (ngSubmit)="saveData(f.value, f.valid)" class="form-horizontal">
+
+          <div class="card">
+
+              <div class="card-header">
+                  <strong>{{ moduleName }}</strong> Add/Edit
+              </div>
+
+              <div class="card-body">
+
+                  <div class="row">
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="nf-salesman_id">Salesman ID*</label>
+                            <input type="text" [(ngModel)]="form.salesman_id" required #salesman_id="ngModel" name="salesman_id" class="form-control form-control-sm form-control-sm" placeholder="">
+                            <small *ngIf="f.submitted && !salesman_id.valid" class="help-block text-danger">{{ salesman_id.errors ? salesman_id.errors : 'Salesman Id harus di isi' }}</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="nf-customer_name">Customer Name*</label>
+                            <input type="text" [(ngModel)]="form.customer_name" required #customer_name="ngModel" name="customer_name" class="form-control form-control-sm form-control-sm" placeholder="">
+                            <small *ngIf="f.submitted && !customer_name.valid" class="help-block text-danger">{{ customer_name.errors ? customer_name.errors : 'Salesman Id harus di isi' }}</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="nf-pict">Pic*</label>
+                            <input type="text" [(ngModel)]="form.pic" required #pic="ngModel" name="pic" class="form-control form-control-sm" placeholder="">
+                            <small *ngIf="f.submitted && !pic.valid" class="help-block text-danger">{{ pic.errors ? pic.errors : 'Pic harus di isi' }}</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="nf-city">City*</label>
+                            <input type="text" [(ngModel)]="form.city" required #city="ngModel" name="city" class="form-control form-control-sm" placeholder="">
+                            <small *ngIf="f.submitted && !city.valid" class="help-block text-danger">{{ pic.errors ? pic.errors : 'City harus di isi' }}</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="nf-remark">Remark*</label>
+                            <input type="text" [(ngModel)]="form.remark" required #remark="ngModel" name="remark" class="form-control form-control-sm" placeholder="">
+                            <small *ngIf="f.submitted && !remark.valid" class="help-block text-danger">{{ remark.errors ? remark.errors : 'Remark harus di isi' }}</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="nf-npwp">NPWP*</label>
+                            <input type="text" [(ngModel)]="form.npwp" required #npwp="ngModel" name="npwp" class="form-control form-control-sm" placeholder="">
+                            <small *ngIf="f.submitted && !npwp.valid" class="help-block text-danger">{{ npwp.errors ? npwp.errors : 'NPWP harus di isi' }}</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="nf-customer_price_category">Customer Price Category*</label>
+                            <input type="text" [(ngModel)]="form.customer_price_category" required #customer_price_category="ngModel" name="customer_price_category" class="form-control form-control-sm" placeholder="">
+                            <small *ngIf="f.submitted && !customer_price_category.valid" class="help-block text-danger">{{ customer_price_category.errors ? customer_price_category.errors : 'Customer Price Category harus di isi' }}</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="nf-panjang_field">Address*</label>
+                            <textarea
+                            [(ngModel)]="form.address"
+                            #address="ngModel"
+                            id="address" 
+                            name="address" 
+                            class="form-control form-control-sm" 
+                            placeholder="" 
+                            rows="2"></textarea>
+                            <small *ngIf="f.submitted && !address.valid" class="help-block text-danger">{{ address.errors ? address.errors : 'Address harus di isi' }} </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="nf-panjang_field">Address Ke-2*</label>
+                            <textarea
+                            [(ngModel)]="form.address_2"
+                            #address_2="ngModel"
+                            id="address_2" 
+                            name="address" 
+                            class="form-control form-control-sm" 
+                            placeholder="" 
+                            rows="2"></textarea>
+                            <small *ngIf="f.submitted && !address_2.valid" class="help-block text-danger">{{ address_2.errors ? address_2.errors : 'Address Ke 2 harus di isi' }} </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="nf-contact_no">Contact No*</label>
+                            <input type="text" [(ngModel)]="form.contact_no" required #contact_no="ngModel" name="contact_no" class="form-control form-control-sm form-control-sm" placeholder="">
+                            <small *ngIf="f.submitted && !contact_no.valid" class="help-block text-danger">{{ contact_no.errors ? contact_no.errors : 'Contact No Id harus di isi' }}</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="nf-region">Region*</label>
+                            <input type="text" [(ngModel)]="form.region" required #region="ngModel" name="region" class="form-control form-control-sm form-control-sm" placeholder="">
+                            <small *ngIf="f.submitted && !region.valid" class="help-block text-danger">{{ region.errors ? region.errors : 'Region Id harus di isi' }}</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="nf-province">Province*</label>
+                            <input type="text" [(ngModel)]="form.province" required #province="ngModel" name="province" class="form-control form-control-sm form-control-sm" placeholder="">
+                            <small *ngIf="f.submitted && !province.valid" class="help-block text-danger">{{ province.errors ? province.errors : 'Province Id harus di isi' }}</small>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="card-footer">
+                  <div class="float-right">
+                      <div *ngIf="loading" class="text-warning mb-0 mt-2">
+                          <i class="fas fa-spinner fa-spin"></i> Loading Data...</div>
+    
+                      <button *ngIf="!loading" type="submit" [disabled]="!f.valid" class="btn btn-sm btn-success">
+                          <i class="fa fa-dot-circle-o"></i> Submit</button>&nbsp;
+                      <button *ngIf="!loading" type="reset" class="btn btn-sm btn-danger" (click)="clearForm()">
+                          <i class="fa fa-ban"></i> Cancel</button>&nbsp;
+                  </div>
+              </div>
+
+          </div>
+      </form>
+  </div>
+
+</div>
+<!-- End of Form -->

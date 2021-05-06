@@ -1,0 +1,25 @@
+@import '~font-awesome/css/font-awesome.css';
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: grey !important;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+div.body {
+    height: 35rem;
+    max-height: 35rem;
+    overflow-y: scroll;
+}
+
+.body-dashboard {
+    background-color: white !important;
+    padding: 9px;
+}
+
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
