@@ -8,7 +8,7 @@ export const navItems: any[] = [
     },
     {
         name: 'Visitor',
-        url: '/visitor',
+        url: '/visitor/add',
         icon: 'fa fa-users',
         permission: null
     },

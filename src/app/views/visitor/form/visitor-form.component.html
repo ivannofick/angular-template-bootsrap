@@ -7,7 +7,12 @@
           <div class="card">
 
               <div class="card-header">
-                  <strong>{{ moduleName }}</strong> Add/Edit
+                <strong>{{ moduleName }}</strong> Add/Edit
+
+                <span class="float-right">
+                    <button class="btn btn-primary btn-sm" (click)="openKarcis($event)">
+                        <i class="fa fa-plus"></i> Next Customer</button>&nbsp;
+                </span>
               </div>
 
               <div class="card-body">
