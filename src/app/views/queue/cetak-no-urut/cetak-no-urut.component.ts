@@ -9,7 +9,7 @@ export class CetakNoUrutComponent implements OnInit {
 
   moduleName:string = 'queue';
   filter:any = {};
-  idBarcode:string = 'nama saya mantul';
+  idBarcode = '12345678901231';
 
   /**
    * Pagination for Master Data
@@ -36,6 +36,7 @@ export class CetakNoUrutComponent implements OnInit {
     console.log('masuk');
     // var newWin = window.open('', 'Print-Window');
     window.print();
+    window.close();
   }
 
 }

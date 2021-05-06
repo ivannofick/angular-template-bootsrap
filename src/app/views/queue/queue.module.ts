@@ -4,14 +4,14 @@ import { QueueRoutingModule } from './queue-routing.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { QueueComponent } from './queue.component';
 import { CetakNoUrutComponent } from './cetak-no-urut/cetak-no-urut.component';
-import { NgxBarcodeModule } from 'ngx-barcode';
+import { NgxBarcode6Module } from 'ngx-barcode6';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     QueueRoutingModule,
-    NgxBarcodeModule 
+    NgxBarcode6Module 
   ],
   declarations: [
     QueueComponent,

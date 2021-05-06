@@ -15,6 +15,12 @@
   </div>
 </div>
 
-<div id="nomor-antrian">
-  <ngx-barcode [bc-value]="idBarcode" [bc-display-value]="true"></ngx-barcode>
+<!-- <div id="nomor-antrian"> -->
+<div>
+  <ngx-barcode6
+    [bc-format]="'MSI'"
+    [bc-value]="idBarcode"
+    [bc-display-value]="true"
+  >
+  </ngx-barcode6>
 </div>
