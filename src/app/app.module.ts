@@ -8,6 +8,7 @@ import { APP_BASE_HREF, CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 // Import ngx-barcode module
 import { NgxBarcode6Module  } from 'ngx-barcode6';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgxBarcode6Module  } from 'ngx-barcode6';
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
-    NgxBarcode6Module 
+    NgxBarcode6Module,
+    ChartsModule
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/' },

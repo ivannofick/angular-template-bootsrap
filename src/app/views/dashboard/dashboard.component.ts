@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChartDataSets, ChartOptions } from 'chart.js';
+import { Color, Label } from 'ng2-charts';
+
+
 
 @Component({
   selector: 'app-dashboard',
@@ -8,42 +12,31 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
 
-  moduleName:string = 'Dashboard';
-  filter:any = {};
-  /**
-   * Pagination for Master Data
-   */
-  protected pageSize = 10;
-  protected currentPage = 1;
-  protected totalItems = 0;
-
-  data:any = [];
-
+  public lineChartData: ChartDataSets[] = [
+    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
+  ];
+  public lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  // public lineChartOptions: (ChartOptions & { annotation: any }) = {
+  //   responsive: true,
+  // };
+  public lineChartColors: Color[] = [
+    {
+      borderColor: 'black',
+      backgroundColor: 'rgba(255,0,0,0.3)',
+    },
+  ];
+  public lineChartLegend = true;
+  public lineChartType = 'line';
+  public lineChartPlugins = [];
 
   constructor(
     private router: Router
   ) { }
 
-  ngOnInit(): void {
-    this.loadData();
-  }
+  ngOnInit(): void {}
 
   changePage(path) {
     this.router.navigate(['/' + path]);
-  }
-
-
-  loadData() {
-    this.data = [
-      {
-        'site'          : 'gudang',
-        'order'         : 'jjnGY75FTf',
-        'customer_id'   : 'njkGF7tR',
-        'customer_name' : 'Budi Nugroho',
-        'description'   : 'Pembelian Sweater ',
-        'price'         : '200000',
-      }
-    ]
   }
 
   doSearch() {

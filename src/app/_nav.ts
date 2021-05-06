@@ -7,8 +7,14 @@ export const navItems: any[] = [
         permission: null
     },
     {
-        name: 'Visitor',
+        name: 'Form Visitor',
         url: '/visitor/add',
+        icon: 'fa fa-users',
+        permission: null
+    },
+    {
+        name: 'Visitor',
+        url: '/visitor',
         icon: 'fa fa-users',
         permission: null
     },
