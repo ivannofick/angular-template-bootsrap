@@ -9,6 +9,8 @@ export class CetakNoUrutComponent implements OnInit {
 
   moduleName:string = 'queue';
   filter:any = {};
+  idBarcode:string = 'nama saya mantul';
+
   /**
    * Pagination for Master Data
    */

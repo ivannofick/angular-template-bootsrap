@@ -5,11 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './tools/material.module';
 import { APP_BASE_HREF, CommonModule } from '@angular/common';
-import { DashboardComponent } from './views/dashboard/dashboard.component';
-import { DashboardFormComponent } from './views/dashboard/form/dashboard-form.component';
-import { VisitorComponent } from './views/visitor/visitor.component';
 import { FormsModule } from '@angular/forms';
-import { TutorialComponent } from './views/tutorial/tutorial.component';
+// Import ngx-barcode module
+import { NgxBarcode6Module  } from 'ngx-barcode6';
 
 @NgModule({
   declarations: [
@@ -22,6 +20,7 @@ import { TutorialComponent } from './views/tutorial/tutorial.component';
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
+    NgxBarcode6Module 
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/' },

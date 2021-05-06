@@ -26,6 +26,8 @@
     "bootstrap": "^4.6.0",
     "font-awesome": "^4.7.0",
     "moment": "^2.29.1",
+    "ngx-barcode": "^0.3.0",
+    "ngx-barcode6": "^1.0.15",
     "rxjs": "~6.5.5",
     "speak-tts": "^2.0.8",
     "tslib": "^2.0.0",
