@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import Speech from 'speak-tts' // es6
 @Component({
   selector: 'app-cetak-no-urut',
   templateUrl: './cetak-no-urut.component.html',
@@ -31,16 +30,10 @@ export class CetakNoUrutComponent implements OnInit {
   }
 
 
-  openKarcis(event) {
+  openPrint() {
     console.log('masuk');
-    const speech = new Speech()
-    speech.speak({
-        text: 'Mas Ipan',
-    }).then(() => {
-        console.log("Success !")
-    }).catch(e => {
-        console.error("An error occurred :", e)
-    })
+    // var newWin = window.open('', 'Print-Window');
+    window.print();
   }
 
 }
