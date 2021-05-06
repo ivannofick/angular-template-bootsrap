@@ -24,6 +24,11 @@ const routes: Routes = [
     path: 'visitor',
     loadChildren: () => import('./views/visitor/visitor.module').then(m => m.VisitorModule),
   },
+
+  {
+    path: 'queue',
+    loadChildren: () => import('./views/queue/queue.module').then(m => m.QueueModule),
+  },
 ];
 
 @NgModule({
