@@ -8,6 +8,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { DashboardRoutingModule } from './dashboard-routing.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from 'src/app/tools/material.module';
+import { DashboardComponent } from './dashboard.component';
+import { DashboardFormComponent } from './form/dashboard-form.component';
 
 @NgModule({
   imports: [
@@ -16,7 +18,10 @@ import { MaterialModule } from 'src/app/tools/material.module';
     DashboardRoutingModule,
     MaterialModule
   ],
-  declarations: [],
+  declarations: [
+    DashboardComponent,
+    DashboardFormComponent
+  ],
   providers: [],
 })
 export class DashboardModule { }

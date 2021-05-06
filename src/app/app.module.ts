@@ -14,10 +14,6 @@ import { TutorialComponent } from './views/tutorial/tutorial.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    DashboardFormComponent,
-    VisitorComponent,
-    TutorialComponent
   ],
   imports: [
     BrowserModule,
