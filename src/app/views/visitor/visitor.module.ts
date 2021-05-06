@@ -13,7 +13,7 @@ import { VisitorComponent } from './visitor.component';
 @NgModule({
   imports: [
     CommonModule,
-    ReactiveFormsModule,
+    FormsModule,
     VisitorRoutingModule,
   ],
   declarations: [
