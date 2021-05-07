@@ -10,6 +10,8 @@ export class QueueComponent implements OnInit {
 
   moduleName:string = 'queue';
   filter:any = {};
+  idBarcode = '12345678901231';
+
   /**
    * Pagination for Master Data
    */
@@ -31,16 +33,11 @@ export class QueueComponent implements OnInit {
   }
 
 
-  openKarcis(event) {
+  openPrint() {
     console.log('masuk');
-    const speech = new Speech()
-    speech.speak({
-        text: 'Mas Ipan',
-    }).then(() => {
-        console.log("Success !")
-    }).catch(e => {
-        console.error("An error occurred :", e)
-    })
+    // var newWin = window.open('', 'Print-Window');
+    window.print();
+    window.close();
   }
 
 }

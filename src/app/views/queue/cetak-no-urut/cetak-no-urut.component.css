@@ -1,9 +1,0 @@
-#nomor-antrian { display: none; }
-
-@media print
-{
-    #bukan-nomor-antrian { display: none; }
-    #nomor-antrian { 
-        display: block; 
-    }
-}

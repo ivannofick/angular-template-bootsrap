@@ -1,0 +1,27 @@
+#nomor-antrian { 
+    /* display: none;  */
+    width: 24rem;
+    height: 12rem;
+    padding: 7px;
+}
+
+@media print
+{
+    body {
+        -webkit-print-color-adjust: exact !important;
+    }
+    #bukan-nomor-antrian { display: none; }
+    #sidebar-wrapper { display: none; }
+    #nomor-antrian { 
+        display: block; 
+        width: 24rem;
+        height: 13rem;
+        padding: 7px;
+    }
+
+    hr.bold-hr {
+        border: 2px solid black;
+    }
+
+
+}

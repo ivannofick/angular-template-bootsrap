@@ -1,16 +1,36 @@
-<div class="row">
+<div class="row" id="bukan-nomor-antrian">
   <div class="col-md-12">
     <div class="card">
       <div class="card-body">
         <h3 class="text-center">Antrian</h3>
         <div class="row">
           <div class="col-md-4"></div>
-          <div class="col-md-4 text-center btn btn-danger" (click)="openKarcis($event)">
+          <div class="col-md-4 text-center btn btn-danger" (click)="openPrint()">
             Silahkan Ambil Nomor Antrian
           </div>
           <div class="col-md-4"></div>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div id="nomor-antrian">
+  <div class="text-center">
+    <h2>Hospital</h2>
+    <hr class="bold-hr">
+    <p>no antrian anda :</p>
+    <p>A0023</p>
+    <p>Mohon Menunggu</p>
+    <ngx-barcode6
+      [bc-format]="'MSI'"
+      [bc-value]="idBarcode"
+      [bc-display-value]="true"
+    >
+    </ngx-barcode6>
+    <p>{{ '12-12-2021' | date:'MMM d, y, h:mm:ss' }}</p>
+    <hr class="bold-hr">
+    <p>Budayakan Mengantri Untuk Kenyamanan Bersama</p>
+    <p>Terima Kasih</p>
   </div>
 </div>
