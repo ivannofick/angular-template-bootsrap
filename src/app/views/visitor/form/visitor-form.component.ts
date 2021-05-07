@@ -38,7 +38,7 @@ export class VisitorFormComponent implements OnInit {
    *
    */
   saveData(value, valid){
-
+    alert('Data Has Been Save');
   }
 
   openKarcis(event) {

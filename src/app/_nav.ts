@@ -1,11 +1,11 @@
 
 export const navItems: any[] = [
-    {
-        name: 'Dashboard',
-        url: '/dashboard',
-        icon: 'fa fa-dashboard',
-        permission: null
-    },
+    // {
+    //     name: 'Dashboard',
+    //     url: '/dashboard',
+    //     icon: 'fa fa-dashboard',
+    //     permission: null
+    // },
     {
         name: 'Form Visitor',
         url: '/visitor/add',
