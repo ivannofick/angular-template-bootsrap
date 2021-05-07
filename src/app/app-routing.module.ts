@@ -4,7 +4,6 @@ import { AppComponent } from './app.component';
 
 import { VisitorComponent } from './views/visitor/visitor.component';
 import { TutorialComponent } from './views/tutorial/tutorial.component';
-import { DashboardFormComponent } from './views/dashboard/form/dashboard-form.component';
 
 const routes: Routes = [
   {

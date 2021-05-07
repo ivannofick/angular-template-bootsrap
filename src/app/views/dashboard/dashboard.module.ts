@@ -9,7 +9,6 @@ import { DashboardRoutingModule } from './dashboard-routing.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from 'src/app/tools/material.module';
 import { DashboardComponent } from './dashboard.component';
-import { DashboardFormComponent } from './form/dashboard-form.component';
 
 @NgModule({
   imports: [
@@ -19,8 +18,7 @@ import { DashboardFormComponent } from './form/dashboard-form.component';
     MaterialModule
   ],
   declarations: [
-    DashboardComponent,
-    DashboardFormComponent
+    DashboardComponent
   ],
   providers: [],
 })
